@@ -1,0 +1,20 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-2">
+			<p class="input-group">
+				<input type="text" class="form-control" uib-datepicker-popup="{{$ctrl.format}}" ng-model="$ctrl.periodo.dataInicio" is-open="$ctrl.popupOpened.inicio" datepicker-options="$ctrl.dateOptions" />
+			  	<span class="input-group-btn">
+			    	<button type="button" class="btn btn-default" ng-click="$ctrl.openInicio()"><i class="glyphicon glyphicon-calendar"></i></button>
+			  	</span>
+			</p>
+		</div>
+		<div class="col-md-2">
+			<p class="input-group">
+				<input type="text" class="form-control" uib-datepicker-popup="{{$ctrl.format}}" ng-model="$ctrl.periodo.dataFim" is-open="$ctrl.popupOpened.fim" datepicker-options="$ctrl.dateOptions" />
+			  	<span class="input-group-btn">
+			    	<button type="button" class="btn btn-default" ng-click="$ctrl.openFim()"><i class="glyphicon glyphicon-calendar"></i></button>
+			  	</span>
+			</p>
+		</div>
+	</div>
+</div>
