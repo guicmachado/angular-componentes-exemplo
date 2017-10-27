@@ -25,10 +25,11 @@ describe('periodoCalendario', function() {
 			beforeEach(inject(function($rootScope, $componentController) {
 				scope = $rootScope.$new();
 				ctrl = $componentController('periodoCalendario', {$scope: scope}, {inicio: new Date(2017, 9, 25), fim: new Date(2017, 9, 30)});
-				ctrl.$onInit();
 			}));
 
 			it('deve atribuir os valores do periodo informado', function() {
+				ctrl.$onInit();
+				
 				expect(compararDatas(ctrl.periodo.dataInicio, new Date(2017, 9, 25))).toBeTruthy();
 				expect(compararDatas(ctrl.periodo.dataFim, new Date(2017, 9, 30))).toBeTruthy();
 			});
