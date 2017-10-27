@@ -3,7 +3,7 @@ describe('periodoCalendario', function() {
 	beforeEach(module('periodoCalendario'));
 
 	describe('PeriodoCalendarioController', function() {
-		var ctrl;
+		var ctrl, scope;
 
 		describe('Sem periodo', function() {
 			beforeEach(inject(function($componentController) {
