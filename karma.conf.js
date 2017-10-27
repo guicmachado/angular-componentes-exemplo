@@ -13,7 +13,7 @@ module.exports = function(config) {
       'src/app/componentes/**/*.spec.js'
     ],
 
-    autoWatch: true,
+    autoWatch: false,
 
     singleRun: true,
 
